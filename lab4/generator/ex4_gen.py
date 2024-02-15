@@ -4,12 +4,13 @@ a = int(input())
 b = int(input())
 
 
-squares = (i*i for i in range(a,b))
-
-for i in squares:
-    print(i , end = " ")
-    
-print()
+def gene(a,b):
+    for i in range(a,b):
+        yield i*i
 
 for i in range(a,b):
     print(i*i ,end = ",")
+
+print()
+
+print(list(gene(a,b)))

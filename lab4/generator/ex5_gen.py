@@ -1,8 +1,7 @@
 # Implement a generator that returns all numbers from (n) down to 0.
 
-v = int(input())
-
-gene = (i for i in range(v,0,-1))
-
-for i in gene:
-    print(i, end =",")
+def gene(n):
+    for i in range(n,0,-1):
+        yield i
+        
+print(', '.join(str(item) for item in list(gene(30))))
