@@ -3,7 +3,7 @@
 
 def gen3and4(v):
     for i in range(v):
-        if i%4 == 0 or i%3 == 0:
+        if i%4 == 0 and i%3 == 0:
             yield i
 
 print(list(gen3and4(30)))
