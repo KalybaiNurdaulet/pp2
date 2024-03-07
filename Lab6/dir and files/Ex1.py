@@ -15,7 +15,7 @@ def files(path):
 def all(path):
     return os.listdir(path)
 
-specified_path = "C:/Users/artur/OneDrive/Рабочий стол/Example"
+specified_path = "C:/Users/Nurik/Desktop/pp2/lab2"
 
 print("Directories:")
 print(directories(specified_path))

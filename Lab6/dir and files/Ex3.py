@@ -10,5 +10,5 @@ def analyse(path):
         print(f"Directory: {direc}")
     else:
         print("The path does not exists")
-p=analyse("C:/Users/artur/OneDrive/Рабочий стол/Example")
+p=analyse("C:/Users/Nurik/Desktop/pp2")
 

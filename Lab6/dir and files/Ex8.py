@@ -1,7 +1,7 @@
 import os
 
 file = 'file3.txt'
-location = "C:/Users/artur/OneDrive/Рабочий стол/pp2/Lab6/dir and files"
+location = "C:/Users/Nurik/Desktop/pp2/Lab6/dir and files"
 path = os.path.join(location, file)
 if os.path.exists(path):
     try:
