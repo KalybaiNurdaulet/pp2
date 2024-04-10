@@ -94,7 +94,7 @@ def drawLineBetween(screen, start, end, width, color_mode):
         y = int(aprogress * start[1] + progress * end[1])
         pygame.draw.circle(screen, color, (x, y), width)
 
-
+# Фигуры
 def drawRectangle(screen, mouse_pos, w, h, color):
     x = mouse_pos[0]
     y = mouse_pos[1]

@@ -1,5 +1,5 @@
 import pygame
-
+# colors
 white = (255, 255, 255)
 eraser = (0, 0, 0)
 green = (34, 139, 34)

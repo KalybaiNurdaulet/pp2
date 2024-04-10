@@ -25,6 +25,7 @@ font_end = pygame.font.SysFont('Arial', 50, bold=True)
 
 
 while True:
+    # colors of elements
     sc.fill(pygame.Color('black'))
     [(pygame.draw.rect(sc, pygame.Color('green'), (i, j, size, size))) for i, j in snake ]
     pygame.draw.rect(sc, pygame.Color('red'), (*apple, size, size))
@@ -42,7 +43,7 @@ while True:
         length+=1
         FPS+=0.5
         score+=1
-        
+    # snake is toch border
     if x<0 or x> Res-size or y<0 or y> Res-size or len(snake) != len(set(snake)):
         while True:
             render_end=font_end.render('GAME OVER', 1, pygame.Color('orange'))
@@ -57,7 +58,7 @@ while True:
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
             exit()
-
+# buttons pressed
     key=pygame.key.get_pressed()
     if key[pygame.K_UP]:
         dx, dy=0, -1
